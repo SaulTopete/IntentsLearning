@@ -13,14 +13,31 @@
         android:ems="10"
         android:hint="Send Message"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_sendmessage_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_sendmessage_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="219dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_sendmessage_send"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <Button
+        android:id="@+id/button_sendmessage_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sendmessage_send"
+        app:layout_constraintVertical_bias="0.263" />
 </android.support.constraint.ConstraintLayout>
